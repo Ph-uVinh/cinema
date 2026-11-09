@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Liên hệ";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Liên hệ</title>
+    <link href="@Url.Content("~/Content/Mystyle/style1.css")" rel="stylesheet" />
+</head>
+<body>
+    <div class="form-page">
+        <div class="form-box">
+            <h2>LIÊN HỆ</h2>
+            <p>Gửi ý kiến hoặc thắc mắc đến CinemaTicket VietNam</p>
+
+            <form>
+                <input type="text" placeholder="Họ và tên" required />
+                <input type="email" placeholder="Email" required />
+                <input type="text" placeholder="Tiêu đề" required />
+                <textarea placeholder="Nội dung liên hệ" rows="5" required></textarea>
+
+                <button type="submit">Gửi liên hệ</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

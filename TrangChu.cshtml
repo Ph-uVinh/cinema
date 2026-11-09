@@ -1,0 +1,49 @@
+﻿
+@{ ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+    }
+    <section class="banner"> 
+    <img src="~/Imgs/banner.jpg" class="banner-img" /> 
+    <div class="banner-content">
+        <h1>ĐẶT VÉ XEM PHIM ONLINE</h1> 
+        <p> Trải nghiệm điện ảnh chất lượng cao với công nghệ chiếu phim hiện đại nhất. </p> 
+        <a href="@Url.Action("Index", "DatVe")" class="booking-btn">ĐẶT VÉ NGAY</a> 
+        </div> 
+    </section>
+<section class="categories"> 
+    <a href="@Url.Action("TatCaPhim", "Home")" class="category">Tất cả phim</a> 
+    <a href="@Url.Action("PhimDangChieu", "Home")" class="category">Phim đang chiếu</a>
+    <a href="@Url.Action("PhimSapChieu", "Home")" class="category">Phim sắp chiếu</a>
+    <a href="@Url.Action("SuatChieuDacBiet", "Home")" class="category">Suất chiếu đặc biệt</a> </section>
+<section class="movies">
+    <h2>Phim nổi bật</h2>
+    <div class="movie-list">
+    <div class="movie-card">
+        <div class="movie-poster poster-1">
+        <img src="~/Imgs/muado.jpg" alt="Phim 01" /> </div>
+        <h3>Phim điện ảnh 01</h3>
+        <a href="#">Xem chi tiết</a> 
+        </div> 
+    <div class="movie-card"> 
+        <div class="movie-poster poster-2"> 
+        <img src="~/Imgs/latmat8.jpg" alt="Phim 02" /> 
+            </div> 
+        <h3>Phim điện ảnh 02</h3>
+        <a href="#">Xem chi tiết</a> 
+        </div>
+    <div class="movie-card">
+        <div class="movie-poster poster-3"> 
+        <img src="~/Imgs/diadao.jpg" alt="Phim 03" />
+            </div>
+        <h3>Phim điện ảnh 03</h3>
+        <a href="#">Xem chi tiết</a> 
+        </div> 
+    <div class="movie-card">
+        <div class="movie-poster poster-4">
+        <img src="~/Imgs/botubaothu.jpg" alt="Phim 04" /> 
+            </div> 
+        <h3>Phim điện ảnh 04</h3>
+        <a href="#">Xem chi tiết</a>
+        </div> 
+        </div> 
+</section>

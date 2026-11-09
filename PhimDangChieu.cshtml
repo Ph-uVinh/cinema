@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Phim Đang Chiếu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="movie-container">
+    <h2 class="page-title">PHIM ĐANG CHIẾU</h2>
+
+    <div class="movie-list">
+
+        <div class="movie-card">
+            <img src="~/Imgs/muado.jpg" alt="Mưa Đỏ">
+            <h3>Mưa Đỏ</h3>
+            <p>Thể loại: </p>
+            <a href="@Url.Action("Index", "DatVe")" class="booking-btn">Đặt vé ngay</a>
+        </div>
+
+        <div class="movie-card">
+            <img src="~/Imgs/latmat8.jpg" alt="Lật Mặt 8">
+            <h3>Lật Mặt 8</h3>
+            <p>Thể loại: </p>
+            <a href="@Url.Action("Index", "DatVe")" class="booking-btn">Đặt vé ngay</a>
+        </div>
+
+        <div class="movie-card">
+            <img src="~/Imgs/botubaothu.jpg" alt="Bộ Tứ Báo Thủ">
+            <h3>Bộ Tứ Báo Thủ</h3>
+            <p>Thể loại: </p>
+            <a href="@Url.Action("Index", "DatVe")" class="booking-btn">Đặt vé ngay</a>
+        </div>
+
+        <div class="movie-card">
+            <img src="~/Imgs/mai.jpg" alt="Mai">
+            <h3>Mai</h3>
+            <p>Thể loại: </p>
+            <a href="@Url.Action("Index", "DatVe")" class="booking-btn">Đặt vé ngay</a>
+        </div>
+
+    </div>
+</div>
+

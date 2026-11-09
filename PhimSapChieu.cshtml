@@ -1,0 +1,36 @@
+﻿@{ ViewBag.Title = "Phim Sắp Chiếu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+ <div class="movie-container">
+    <h2 class="page-title">PHIM SẮP CHIẾU</h2> 
+    <div class="movie-list"> 
+     <div class="movie-card"> 
+        <img src="~/Imgs/mai.jpg" alt="Mai">
+        <h3>Mai</h3> 
+        <p>Thể loại: Tình cảm</p> 
+        <p class="release-date">Ngày khởi chiếu: Đang cập nhật</p>
+        <a href="@Url.Action("Index", "DatVe")" class="booking-btn">Xem chi tiết</a>
+         </div> 
+     <div class="movie-card"> 
+        <img src="~/Imgs/diadao.jpg" alt="Địa Đạo">
+        <h3>Địa Đạo</h3> 
+        <p>Thể loại: Chiến tranh</p> 
+        <p class="release-date">Ngày khởi chiếu: Đang cập nhật</p> 
+        <a href="@Url.Action("Index", "DatVe")" class="booking-btn">Xem chi tiết</a> 
+              </div> 
+     <div class="movie-card"> 
+        <img src="~/Imgs/nhagiatien.jpg" alt="Nhà Gia Tiên">
+        <h3>Nhà Gia Tiên</h3> 
+        <p>Thể loại: Hài, gia đình</p>
+        <p class="release-date">Ngày khởi chiếu: Đang cập nhật</p> 
+        <a href="@Url.Action("Index", "DatVe")" class="booking-btn">Xem chi tiết</a> 
+                   </div> 
+     <div class="movie-card">
+        <img src="~/Imgs/quynhaptrang.jpg" alt="Quỷ Nhập Tràng"> 
+        <h3>Quỷ Nhập Tràng</h3> 
+        <p>Thể loại: Kinh dị</p> 
+        <p class="release-date">Ngày khởi chiếu: Đang cập nhật</p>
+        <a href="@Url.Action("Index", "DatVe")" class="booking-btn">Xem chi tiết</a>
+         </div>
+        </div>
+ </div>

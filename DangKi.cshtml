@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Đăng ký";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Đăng ký</title>
+    <link href="@Url.Content("~/Content/Mystyle/style1.css")" rel="stylesheet" />
+</head>
+<body>
+    <div class="form-page">
+        <div class="form-box">
+            <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
+            <p>Tạo tài khoản CinemaTicket của bạn</p>
+
+            <form>
+                <input type="text" placeholder="Họ và tên" required />
+                <input type="email" placeholder="Email" required />
+                <input type="text" placeholder="Tên đăng nhập" required />
+                <input type="password" placeholder="Mật khẩu" required />
+                <input type="password" placeholder="Nhập lại mật khẩu" required />
+
+                <button type="submit">Đăng ký</button>
+            </form>
+
+            <p class="form-link">
+                Đã có tài khoản?
+                <a href="@Url.Action("Index", "DangNhap")">Đăng nhập</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - CinemaTicket VietNam</title>
+    <link href="@Url.Content("~/Content/Mystyle/style1.css")" rel="stylesheet" />
+    <script src="~/Scripts/MyScripts/JavaScript1.js"></script>
+</head>
+<body>
+    <header class="header"> 
+    <div class="logo">
+        <span class="logo-icon">🎬</span>
+        <span>CinemaTicket VietNam</span> 
+        </div> <nav class="navbar">
+    <a href="@Url.Action("TrangChu", "Home")">Trang chủ</a>
+    <a href="@Url.Action("CumRap", "RapChieu")">Cụm rạp</a>
+    <a href="@Url.Action("Index", "LienHe")">Liên hệ</a>
+    <a href="@Url.Action("DangNhap", "TaiKhoan")">Đăng nhập</a>
+    <a href="@Url.Action("DangKi", "TaiKhoan")">Đăng ký</a>
+</nav> <div class="account"> 
+                  </div> 
+        </header>
+    <main class="main-content"> @RenderBody() </main>
+    <footer class="footer"> 
+    <div class="footer-content">
+        <h3>CinemaTicket VietNam</h3> 
+        <p>Trải nghiệm điện ảnh tuyệt vời</p> 
+        <form class="search-box" onsubmit="return searchMovie(event)">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm phim..."> 
+        <button type="submit">Tìm kiếm</button> 
+            </form> 
+        <p class="copyright"> © 2026 CinemaTicket VietNam </p> 
+        </div>
+    </footer>
+</body>
+</html>
